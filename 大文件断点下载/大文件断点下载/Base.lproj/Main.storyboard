@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmQ-d2-ROs">
+                                <rect key="frame" x="51" y="129" width="67" height="30"/>
+                                <state key="normal" title="暂停任务1"/>
+                                <connections>
+                                    <action selector="suspend1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="997-5Z-1Q2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVG-rh-paY">
+                                <rect key="frame" x="50" y="75" width="69" height="30"/>
+                                <state key="normal" title="开始任务2"/>
+                                <connections>
+                                    <action selector="start2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iRn-AH-35C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGE-0d-d9A">
+                                <rect key="frame" x="55" y="173" width="60" height="30"/>
+                                <state key="normal" title="全部暂停"/>
+                                <connections>
+                                    <action selector="suspendAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DRM-xQ-66d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Deu-1l-77I">
+                                <rect key="frame" x="179" y="43" width="67" height="30"/>
+                                <state key="normal" title="继续任务1"/>
+                                <connections>
+                                    <action selector="resume1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iMM-JX-Xau"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCV-Pl-q8N">
+                                <rect key="frame" x="175" y="75" width="90" height="30"/>
+                                <state key="normal" title="继续全部任务"/>
+                                <connections>
+                                    <action selector="resumeAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gTZ-6i-wqp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3T-2J-n5s">
+                                <rect key="frame" x="191" y="123" width="67" height="30"/>
+                                <state key="normal" title="取消任务1"/>
+                                <connections>
+                                    <action selector="cancel1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Icw-7r-2HT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eR-KF-E61">
+                                <rect key="frame" x="180" y="168" width="90" height="30"/>
+                                <state key="normal" title="取消所有任务"/>
+                                <connections>
+                                    <action selector="cancelAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D7i-cw-bxA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAF-ZG-sWy">
+                                <rect key="frame" x="48" y="43" width="67" height="30"/>
+                                <state key="normal" title="开始任务1"/>
+                                <connections>
+                                    <action selector="start1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EyL-RC-38R"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151" y="330"/>
+        </scene>
+    </scenes>
+</document>
