@@ -50,6 +50,10 @@
 /**下载过程中调用的block*/
 @property(nonatomic,copy)void (^downloadProgressBlock)(CGFloat progress);
 ;
+/**记录是否处于暂停状态*/
+@property(nonatomic,assign)BOOL isSuspend;
+/**记录是否处于下载状态*/
+@property(nonatomic,assign)BOOL isDownloading;
 /**下载完成后调用的block*/
 @property(nonatomic,copy)void (^completeBlock)(NSString *, NSError *);
 @end
@@ -117,17 +121,22 @@
     }
     return _session;
 }
-- (void)start
-{
-    [self.dataTask resume];
-}
+
 - (void)resume
 {
-    [self start];
+    if (!self.isDownloading) {
+        [self.dataTask resume];
+        self.isDownloading = YES;
+        self.isSuspend = NO;
+    }
 }
 - (void)suspend
 {
-    [self.dataTask suspend];
+    if (!self.isSuspend) {
+        [self.dataTask suspend];
+        self.isSuspend = YES;
+        self.isDownloading = NO;
+    }
 }
 - (void)cancel
 {

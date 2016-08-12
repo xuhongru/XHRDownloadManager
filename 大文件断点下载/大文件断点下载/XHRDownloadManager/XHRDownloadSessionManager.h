@@ -10,8 +10,7 @@
 
 
 @interface XHRDownloadSessionManager : NSObject
-/**开启下载任务*/
-- (void)start;
+
 /**
  *  继续任务
  */

@@ -8,11 +8,11 @@
 
 #import "ViewController.h"
 #import "XHRDownloadManager.h"
+#import <objc/runtime.h>
 @interface ViewController ()
 /**downloadManager*/
 @property(nonatomic,strong)XHRDownloadManager *downloadManager;
 @end
-
 
 @implementation ViewController
 - (XHRDownloadManager *)downloadManager

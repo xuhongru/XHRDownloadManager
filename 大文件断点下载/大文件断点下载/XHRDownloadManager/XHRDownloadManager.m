@@ -36,7 +36,7 @@
                 });
             }
         }];
-        [downloadSessionManager start];
+        [downloadSessionManager resume];
     }
 }
 
