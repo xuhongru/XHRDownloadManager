@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B6844A491D5CF64F00A076FB /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = B6844A441D5CF64F00A076FB /* NSString+Hash.m */; };
-		B6844A4A1D5CF64F00A076FB /* XHRDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B6844A461D5CF64F00A076FB /* XHRDownloadManager.m */; };
-		B6844A4B1D5CF64F00A076FB /* XHRDownloadSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B6844A481D5CF64F00A076FB /* XHRDownloadSessionManager.m */; };
+		B6E423DF1D5F0A54002C239C /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E423DA1D5F0A54002C239C /* NSString+Hash.m */; };
+		B6E423E01D5F0A54002C239C /* XHRDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E423DC1D5F0A54002C239C /* XHRDownloadManager.m */; };
+		B6E423E11D5F0A54002C239C /* XHRDownloadSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E423DE1D5F0A54002C239C /* XHRDownloadSessionManager.m */; };
 		B6F295CA1D06AC8300989B4E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F295C91D06AC8300989B4E /* main.m */; };
 		B6F295CD1D06AC8300989B4E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F295CC1D06AC8300989B4E /* AppDelegate.m */; };
 		B6F295D01D06AC8300989B4E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F295CF1D06AC8300989B4E /* ViewController.m */; };
@@ -19,12 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B6844A431D5CF64F00A076FB /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
-		B6844A441D5CF64F00A076FB /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
-		B6844A451D5CF64F00A076FB /* XHRDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHRDownloadManager.h; sourceTree = "<group>"; };
-		B6844A461D5CF64F00A076FB /* XHRDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHRDownloadManager.m; sourceTree = "<group>"; };
-		B6844A471D5CF64F00A076FB /* XHRDownloadSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHRDownloadSessionManager.h; sourceTree = "<group>"; };
-		B6844A481D5CF64F00A076FB /* XHRDownloadSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHRDownloadSessionManager.m; sourceTree = "<group>"; };
+		B6E423D91D5F0A54002C239C /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		B6E423DA1D5F0A54002C239C /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
+		B6E423DB1D5F0A54002C239C /* XHRDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHRDownloadManager.h; sourceTree = "<group>"; };
+		B6E423DC1D5F0A54002C239C /* XHRDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHRDownloadManager.m; sourceTree = "<group>"; };
+		B6E423DD1D5F0A54002C239C /* XHRDownloadSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHRDownloadSessionManager.h; sourceTree = "<group>"; };
+		B6E423DE1D5F0A54002C239C /* XHRDownloadSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHRDownloadSessionManager.m; sourceTree = "<group>"; };
 		B6F295C51D06AC8300989B4E /* 大文件断点下载.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "大文件断点下载.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F295C91D06AC8300989B4E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B6F295CB1D06AC8300989B4E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -48,23 +48,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B6844A411D5CF64F00A076FB /* XHRDownloadManager */ = {
+		B6E423D71D5F0A54002C239C /* XHRDownloadManager */ = {
 			isa = PBXGroup;
 			children = (
-				B6844A421D5CF64F00A076FB /* MD5 */,
-				B6844A451D5CF64F00A076FB /* XHRDownloadManager.h */,
-				B6844A461D5CF64F00A076FB /* XHRDownloadManager.m */,
-				B6844A471D5CF64F00A076FB /* XHRDownloadSessionManager.h */,
-				B6844A481D5CF64F00A076FB /* XHRDownloadSessionManager.m */,
+				B6E423D81D5F0A54002C239C /* MD5 */,
+				B6E423DB1D5F0A54002C239C /* XHRDownloadManager.h */,
+				B6E423DC1D5F0A54002C239C /* XHRDownloadManager.m */,
+				B6E423DD1D5F0A54002C239C /* XHRDownloadSessionManager.h */,
+				B6E423DE1D5F0A54002C239C /* XHRDownloadSessionManager.m */,
 			);
-			path = XHRDownloadManager;
+			name = XHRDownloadManager;
+			path = "大文件断点下载/XHRDownloadManager";
 			sourceTree = "<group>";
 		};
-		B6844A421D5CF64F00A076FB /* MD5 */ = {
+		B6E423D81D5F0A54002C239C /* MD5 */ = {
 			isa = PBXGroup;
 			children = (
-				B6844A431D5CF64F00A076FB /* NSString+Hash.h */,
-				B6844A441D5CF64F00A076FB /* NSString+Hash.m */,
+				B6E423D91D5F0A54002C239C /* NSString+Hash.h */,
+				B6E423DA1D5F0A54002C239C /* NSString+Hash.m */,
 			);
 			path = MD5;
 			sourceTree = "<group>";
@@ -72,6 +73,7 @@
 		B6F295BC1D06AC8300989B4E = {
 			isa = PBXGroup;
 			children = (
+				B6E423D71D5F0A54002C239C /* XHRDownloadManager */,
 				B6F295C71D06AC8300989B4E /* 大文件断点下载 */,
 				B6F295C61D06AC8300989B4E /* Products */,
 			);
@@ -88,7 +90,6 @@
 		B6F295C71D06AC8300989B4E /* 大文件断点下载 */ = {
 			isa = PBXGroup;
 			children = (
-				B6844A411D5CF64F00A076FB /* XHRDownloadManager */,
 				B6F295CB1D06AC8300989B4E /* AppDelegate.h */,
 				B6F295CC1D06AC8300989B4E /* AppDelegate.m */,
 				B6F295CE1D06AC8300989B4E /* ViewController.h */,
@@ -181,11 +182,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6F295D01D06AC8300989B4E /* ViewController.m in Sources */,
-				B6844A4B1D5CF64F00A076FB /* XHRDownloadSessionManager.m in Sources */,
-				B6844A491D5CF64F00A076FB /* NSString+Hash.m in Sources */,
+				B6E423E11D5F0A54002C239C /* XHRDownloadSessionManager.m in Sources */,
+				B6E423DF1D5F0A54002C239C /* NSString+Hash.m in Sources */,
 				B6F295CD1D06AC8300989B4E /* AppDelegate.m in Sources */,
 				B6F295CA1D06AC8300989B4E /* main.m in Sources */,
-				B6844A4A1D5CF64F00A076FB /* XHRDownloadManager.m in Sources */,
+				B6E423E01D5F0A54002C239C /* XHRDownloadManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
