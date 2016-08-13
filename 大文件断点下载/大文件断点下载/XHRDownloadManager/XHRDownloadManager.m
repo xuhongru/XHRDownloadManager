@@ -25,13 +25,13 @@
         XHRDownloadSessionManager *downloadSessionManager = [[XHRDownloadSessionManager alloc]init];
         self.sessionDictionary[urlString.md5String] = downloadSessionManager;
         [downloadSessionManager downloadFromURL:urlString progress:^(CGFloat downloadProgress) {
-            dispatch_async(dispatch_get_main_queue(), ^{
+            dispatch_sync(dispatch_get_main_queue(), ^{
                 !downloadProgressBlock?:downloadProgressBlock(downloadProgress);
             });
         }complement:^(NSString *filePath, NSError *error) {
             if (!error) {
                 [self.sessionDictionary removeObjectForKey:urlString.md5String];
-                dispatch_async(dispatch_get_main_queue(), ^{
+                dispatch_sync(dispatch_get_main_queue(), ^{
                     !completeBlock?:completeBlock(filePath,nil);
                 });
             }
